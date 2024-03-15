@@ -109,11 +109,11 @@ Validate version numbers strictly according to semver.org; 3 integers, no wildca
 ```js
 import { validateStrict } from 'compare-versions';
 
-validate('1.0.0');      // true
-validate('1.0.0-rc.1'); // true
-validate('1.0');        // false
-validate('1.x');        // false
-validate('v1.02');      // false
+validateStrict('1.0.0');      // true
+validateStrict('1.0.0-rc.1'); // true
+validateStrict('1.0');        // false
+validateStrict('1.x');        // false
+validateStrict('v1.02');      // false
 ```
 
 ### Browser
